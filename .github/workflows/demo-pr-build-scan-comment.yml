@@ -31,7 +31,7 @@ jobs:
     - name: Run build with Gradle wrapper
       id: gradle
       working-directory: .github/workflow-samples/kotlin-dsl
-      run: ./gradlew build --scan
+      run: ./gradlew build --no-scan
 
   successful-build-with-comment-on-failure:
     needs: build-distribution
@@ -67,5 +67,5 @@ jobs:
     - name: Run build with Gradle wrapper
       id: gradle
       working-directory: .github/workflow-samples/kotlin-dsl
-      run: ./gradlew no-a-real-task --scan
+      run: ./gradlew no-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task-a-real-task --scan
       continue-on-error: true
